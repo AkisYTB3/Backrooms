@@ -1,0 +1,10 @@
+name: BackroomsPlugin
+version: '1.0.0'
+main: org.notionsmp.backroomsPlugin.BackroomsPlugin
+api-version: '1.21'
+authors: [ Akis ]
+depend:
+  - Nexo
+commands:
+  backrooms:
+    description: "Backrooms command"
