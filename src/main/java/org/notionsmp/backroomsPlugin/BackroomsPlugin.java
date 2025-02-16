@@ -103,7 +103,7 @@ public class BackroomsPlugin extends JavaPlugin implements CommandExecutor {
                         if (!generatedChunks.contains(chunkLoc)) {
                             generatedChunks.add(chunkLoc);
                             generateBackrooms(location.getWorld(), chunkX * 16, chunkZ * 16, backroomsYLevel);
-                            generatePoolrooms(location.getWorld(), chunkX * 16, chunkZ * 16, backroomsYLevel);
+                            //(location.getWorld(), chunkX * 16, chunkZ * 16, backroomsYLevel);
                         }
                     }
                 }
