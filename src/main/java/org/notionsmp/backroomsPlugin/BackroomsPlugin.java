@@ -65,7 +65,7 @@ public class BackroomsPlugin extends JavaPlugin implements CommandExecutor {
                 if (!generating) {
                     generating = true;
                     startGenerating(targetPlayer, backroomsYLevel);
-                    sender.sendMessage("Backrooms and Poolrooms generation started!");
+                    sender.sendMessage("Backrooms generation started!");
                 } else {
                     sender.sendMessage("Generation is already running!");
                 }
@@ -171,7 +171,7 @@ public class BackroomsPlugin extends JavaPlugin implements CommandExecutor {
     }
 
     private void generateBackrooms(World world, int startX, int startZ, int backroomsYLevel) {
-        int wallHeight = 5;
+        int wallHeight = 4;
         int roomSize = 6;
 
         if (random.nextDouble() < 0.025) {
@@ -361,7 +361,7 @@ public class BackroomsPlugin extends JavaPlugin implements CommandExecutor {
                         world.getBlockAt(decorationLoc).setType(random.nextBoolean() ? Material.RED_MUSHROOM : Material.BROWN_MUSHROOM);
                         break;
                     case 2:
-                        world.getBlockAt(decorationLoc).setType(Material.REDSTONE);
+                        world.getBlockAt(decorationLoc).setType(Material.REDSTONE_WIRE);
                         break;
                 }
             }
